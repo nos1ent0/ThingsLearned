@@ -1,0 +1,37 @@
+
+Option A: Using /usr/local/bin (system-wide, no PATH changes needed)
+Step 1: Make sure your game script has the correct first line (shebang)
+
+
+Open your Python game script (move_char.py):
+nano ~/games/move_char.py
+
+Make sure the very first line is:
+#!/usr/bin/env python3
+
+If it’s not there, add it.
+
+Save and exit (Ctrl + O, Enter, then Ctrl + X).
+
+Step 2: Make your script executable
+chmod +x ~/games/move_char.py
+
+Step 3: Copy your script to /usr/local/bin and rename it to your command
+sudo cp ~/games/move_char.py /usr/local/bin/playgame
+
+You’ll be asked for your password because this needs root permission.
+Step 4: (Optional) Make sure the copied file is executable (should be, but just in case)
+
+sudo chmod +x /usr/local/bin/playgame
+
+Step 5: Now you can run your game from anywhere in the terminal by typing:
+playgame
+
+Step 6: To stop the game, press q (or whatever your quit key is).
+Troubleshooting:
+
+    If playgame doesn’t work immediately, try closing and reopening the terminal.
+
+    You can check if /usr/local/bin/playgame exists and is executable:
+
+ls -l /usr/local/bin/playgame
