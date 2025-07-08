@@ -1,0 +1,36 @@
+f anyone still wants to do that you can do it like this;
+
+go to .config > neofetch > config.conf
+
+and find
+# text colors "about line 200"
+# ascii colors "about line 700"
+
+lines
+
+colors=(distro) it looks like this on default but you can change it like you want
+for example ı wanted cyan and white so i wrote;
+
+colors=(6 7)
+
+0 = black
+
+1 = red
+
+2 = green
+
+3 = yellow
+
+4 = blue
+
+5 = magenta
+
+6 = cyan
+
+7 = white
+
+8 = default foreground color
+
+it was like this on my terminal you can try and find how you like.
+
+make sure you change the one with non comment line and to save it. 
